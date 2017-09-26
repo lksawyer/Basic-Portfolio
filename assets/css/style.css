@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	color: #111;
+	color: gray;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -21,10 +21,18 @@ body {
 
 #content {
 	max-width: 650px;
+	width: 100%;
+	background-color: #ffffff;
+	float: left;
+	margin-top: 2rem;
 }
 
 #sidebar {
 	max-width: 270px;
+	background-color: #ffffff;
+	float: right;
+	width: 100%;
+	margin-top: 2rem;
 }
 
 .clear::after {
@@ -33,9 +41,11 @@ body {
   	clear: both;
 }
 
+/* ------ Header --------- */
+
 #headerBackground {
 	background-color: #ffffff;
-	border-bottom: 2px solid rgba(124, 191, 167, 1);
+	border-bottom: 4px solid rgba(124, 191, 167, 1);
 }
 
 #headerWrapper {
@@ -67,3 +77,97 @@ nav ul li::after {
 nav ul li:last-child::after {
 	content: "";
 }
+
+/* ------ About Me --------------*/
+
+#content {
+	padding: 2rem;
+}
+
+#content h1 {
+	color: rgba(124, 191, 167, 1);
+	font-weight: bold;
+	font-size: 2rem;
+	border-bottom: 2px solid  gray;
+}
+
+#content div img {
+	padding: 0 1rem 1rem 0;
+	float: left;
+}
+#content div p {
+	padding-top: 1rem;
+}
+
+/*---- sidebar ------- */
+
+#sidebar {
+	padding: 2rem;
+}
+
+#sidebar h1 {
+	color: rgba(124, 191, 167, 1);
+	font-weight: bold;
+	font-size: 1.5rem;
+	border-bottom: 2px solid  gray;
+}
+
+#sidebar div {
+	
+	padding-top: 2rem;
+}
+
+#sidebar div img {
+	display: block;
+	width: 33.3%;
+	height:auto;
+	float: left;
+	padding: 0 .75rem;
+}
+
+/*------- Footer -------- */
+
+footer {
+	text-align: center;
+	width: 100%;
+	padding: 2rem;
+	background-color: #ffffff;
+	bottom: 0;
+	border-top: 6px solid rgba(124, 191, 167, 1);
+	margin-top: 2rem;
+}
+
+/*------Portfolio--------*/
+
+#portfolioImageWrapper {
+	padding: 2rem 0;
+
+}
+
+#portfolioImageWrapper div {
+	height: 0;
+	width: 50%;
+	padding-bottom: calc(50% - 2rem);
+	float: left;
+	border-right: 1rem solid #ffffff;
+	border-bottom: 2rem solid #ffffff;
+	background-image: url("../images/placeholder.png");
+	position: relative;
+}
+
+#portfolioImageWrapper div:nth-child(even) {
+	border-left: 1rem solid #ffffff;
+	border-right: 0 solid #ffffff;
+}
+
+#portfolioImageWrapper div p {
+	background-color: rgba(165, 255, 223, 1);
+	padding: 1rem 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+
