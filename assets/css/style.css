@@ -192,4 +192,59 @@ input[type=submit] {
 }
 
 
+/*Media Queries*/
+
+@media screen and (max-width: 980px) {
+     #sidebar {
+     	float:left;
+     }
+
+     #portfolioImageWrapper div {
+     	float: none;
+     	margin: 0 auto;
+     }
+}
+
+@media screen and (max-width: 768px) {
+
+	#pageWrapper {
+		max-width: 100%
+		width: 100%;
+    }
+
+    #content, #sidebar {
+		float: none;
+		max-width: 100%;
+		
+    }
+
+    #sidebar div img {
+		width: 10%;
+	}
+		
+}
+
+
+@media screen and (max-width: 640px) {
+    #headerWrapper {
+    	max-width: 100%;
+    }
+
+    header, nav {
+		float: none;
+		text-align: center;
+	
+	}
+
+	nav ul li {
+		width: 33.3%;
+		border-right: 1px solid gray;
+	}
+
+	nav ul li::after {
+	content: "";
+	}
+}
+
+
 
